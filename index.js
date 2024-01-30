@@ -41,4 +41,4 @@ const servidor = createServer((peticion,respuesta) => {
    }
 }); 
 
-servidor.listen(3000);
+servidor.listen(process.env.PORT || 3000);//si hay una variable de entorno usala, sino usa el puerto 3000
